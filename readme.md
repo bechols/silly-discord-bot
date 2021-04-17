@@ -11,11 +11,12 @@ Invoked via slash command
     1. Upload to Lambda
     1. Set the environment variable `CLIENT_PUBLIC_KEY` to your Discord application's public key 
 1. Update the Discord application with the Lambda URL
-1. Register the slash command
+    1. Set the `INTERACTIONS ENDPOINT URL` value in Discord to the Lambda trigger URL
+3. Register the slash command
     1. https://discord.com/developers/docs/interactions/slash-commands#registering-a-command
     1. The slash command can be whatever you want
-1. Adjust Discord permissions if necessary
+4. Adjust Discord permissions if necessary
     1. https://discord.com/developers/docs/interactions/slash-commands#authorizing-your-application
-1. Invoke whatever slash command you configured - you're done!
+5. Invoke whatever slash command you configured - you're done!
 
 As of April 2021 there doesn't seem to be a way to get all Discord messages without having a server running all the time to maintain a Discord Gateway connection
